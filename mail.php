@@ -34,7 +34,7 @@
 			$data['error'] = 'Sorry, an error occured!';
 		}
 		else if{
-			$data['error'] = 'Thank for contacting me. I will get onto you shortly';
+			$data['error'] = 'Thanks for contacting me. I will get onto you shortly';
 		}
 	
 		
