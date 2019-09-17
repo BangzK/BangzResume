@@ -26,13 +26,19 @@
 		
 		
 		//Place your Email Here
-		$recipient = "your_mail@your_domain.com";
+		$recipient = "khalil.bangz@gmail.com";
 		
 		$mailheader = "From: $email \r\n";
 		
 		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
 			$data['error'] = 'Sorry, an error occured!';
-		}else{
+		}
+		else if{
+			$data['error'] = 'Thank for contacting me. I will get onto you shortly';
+		}
+	
+		
+		else{
 			$data['error'] = false;
 		}
 	
