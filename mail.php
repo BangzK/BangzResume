@@ -26,15 +26,15 @@
 		
 		
 		//Place your Email Here
-		$recipient = "khalil.bangz@gmail.com";
+		$recipient = 'khalil.bangz@gmail.com';
 		
 		$mailheader = "From: $email \r\n";
 		
-		if( mail($recipient, $name, $formcontent, $mailheader) == false ){
-			$data['error'] = 'Sorry, an error occured!';
+		if( mail($recipient, $name, $formcontent, $mailheader) == true ){
+			$data['error'] = 'Thanks for contacting me. I will get onto you shortly';
 		}
 		else if{
-			$data['error'] = 'Thanks for contacting me. I will get onto you shortly';
+			$data['error'] = 'Sorry! an error occured.';
 		}
 	
 		
